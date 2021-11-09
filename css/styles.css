@@ -159,6 +159,7 @@ nav {
     border-radius: 1rem;
     box-shadow: 0 0 1px 1px rgba(0,0,0,0.65);
     text-align: center;
+    backdrop-filter: blur(5px);
 }
 
 .skill img {
@@ -199,6 +200,7 @@ nav {
     color: white;
     width: 100%;
     background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(5px);
     max-width: 70rem;
     margin: 0 auto;
 }
