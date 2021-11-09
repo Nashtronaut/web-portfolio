@@ -30,7 +30,7 @@ nav,
 
 footer,
 header {
-    background-image: url("../assests/images/neonbrand-OjxsirfohHU-unsplash.jpg");
+    background-image: url("../assests/images/header-footer-small.webp");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -133,10 +133,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../assests/images/about-me-background.jpg");
+    background-image: url("../assests/images/about-me-background-small.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 40%;
     min-height: 100vh;
     padding: 1.5rem;
 }
@@ -206,7 +205,7 @@ nav {
 /* Skills Page */
 
 .skills-background {
-    background-image: url("../assests/images/skills-page-background-second.webp");
+    background-image: url("../assests/images/skills-page-background-small.webp");
     background-size: cover;
     background-position-x: 50%;
     background-repeat: no-repeat;
@@ -263,7 +262,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../assests/images/contact-page.jpg");
+    background-image: url("../assests/images/contact-page-small.webp");
     background-size: cover;
     background-position-x: 28%;
     min-height: 100vh;
@@ -379,6 +378,11 @@ footer {
 @media screen and (min-width: 550px) {
     /* MEDIUM Nav Bar*/
     
+    header,
+    footer {
+        background-image: url("../assests/images/header-footer-medium.webp");
+    }
+    
     .menu-icon {
         display: none;
     }
@@ -447,6 +451,10 @@ footer {
     
     /*MEDIUM Skills Page */
     
+    .skills-background {
+        background-image: url("../assests/images/skills-page-medium.webp");
+    }
+    
     .skill {
         width: 39%;
     }
@@ -464,11 +472,32 @@ footer {
         flex-flow: row wrap;
         justify-content: center;
     }
+    
+    /* MEDIUM Contact Page */
+    
+    .contact-background {
+        background-image: url("../assests/images/contact-page-medium.webp");
+    }
 }
 
 @media screen and (min-width: 770px) {
+    
+    header,
+    footer {
+        background-image: url("../assests/images/header-footer-large.webp");
+    }
+    
     .main-page-content {
-        background-position-y: 10%;
+        background-image: url("../assests/images/main-page-background-large.webp");
+        background-position-y: 40%;
+    }
+    
+    .skills-background {
+        background-image: url("../assests/images/skills-page-background-large.webp");
+    }
+    
+    .contact-background {
+        background-image: url("../assests/images/contact-page-large.webp");
     }
     
     .title-container h2 {
