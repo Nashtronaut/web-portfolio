@@ -129,17 +129,19 @@ nav {
 
 .skills-background {
     background-image: url("../assests/images/skills-page-background-second.webp");
-    height: 100vh;
+    
     background-size: cover;
     background-position-x: 55%;
     background-repeat: no-repeat;
     padding: 1.5rem;
 }
 
-.flex-container {
+.skill-flex-container {
     display: flex;
     flex-flow: column;
-    
+    gap: 1.5rem;
+    max-width: 83rem;
+    margin: 0 auto;
 }
 
 .skill {
@@ -147,6 +149,7 @@ nav {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
     background: rgba(0,0,0,0.65);
     padding: 1.5rem;
     color: white;
@@ -254,6 +257,32 @@ footer {
 
     .footer-container svg {
         width: 3rem;
+    }
+    
+    /*MEDIUM Skills Page */
+    
+    .skill {
+        width: 40%;
+    }
+    
+    .skill h2 {
+        font-size: 1.5rem;
+    }
+    
+    .skill p:last-of-type {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    .skill-flex-container {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .skill {
+        width: 25%;
     }
 }
 
