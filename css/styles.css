@@ -1,1 +1,56 @@
-ECHO is on.
+body {
+    font-family: 'Red Hat Mono', monospace;
+}
+
+.active {
+    max-height: 100vh;
+}
+
+.menu-icon:hover {
+    fill: hotpink;
+}
+
+header {
+    background-image: url("../assests/images/neonbrand-OjxsirfohHU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 1rem;
+}
+
+.header-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+nav {
+    width: 100%;
+    text-align: right;
+    line-height: 2.5;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.main-menu li {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.main-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-menu li a:hover {
+    color: hotpink;
+}
+
+.main-menu li:first-child {
+    margin-top: 2rem;
+}
+
