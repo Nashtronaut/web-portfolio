@@ -34,7 +34,7 @@
             let template = `<div class="skill">
       <img src="assests/png/${skill.img}" alt="${skill.skill} logo">
       <h2>${skill.skill}</h2>
-      <p>Proficiency: ${prof}</p>
+      <p>${prof}</p>
       <div class="progress-container">
         <div class="progress-bar" style="width: ${skill.progress}%"></div>
       </div>

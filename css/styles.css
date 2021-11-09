@@ -47,7 +47,7 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     max-width: 75rem;
     margin: 0 auto;
 }
@@ -72,6 +72,7 @@ nav {
     justify-content: right;
     align-items: center;
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .main-menu li a {
@@ -96,6 +97,7 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 40%;
+    background-position-y: 40%;
     height: 93vh;
     padding: 1rem;
 }
@@ -129,11 +131,11 @@ nav {
 
 .skills-background {
     background-image: url("../assests/images/skills-page-background-second.webp");
-    
     background-size: cover;
     background-position-x: 55%;
     background-repeat: no-repeat;
     padding: 1.5rem;
+    height: 100vh;
 }
 
 .skill-flex-container {
@@ -156,6 +158,7 @@ nav {
     line-height: 2.5;
     border-radius: 1rem;
     box-shadow: 0 0 1px 1px rgba(0,0,0,0.65);
+    text-align: center;
 }
 
 .skill img {
@@ -200,30 +203,45 @@ footer {
     width: 2rem;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 480px) {
     /* MEDIUM Nav Bar*/
+    
+    .title-container {
+        position: relative;
+        top: -5rem
+    }
     
     .menu-icon {
         display: none;
     }
     
+    header h1 {
+        font-size: 2rem;
+    }
+    
     .header-container {
         align-items: center;
+        justify-content: center;
+    }
+    
+    header {
+        padding-bottom: 0;
     }
     
     nav {
-        width: 70%;
+        width: 100%;
         max-height: initial;
+        margin-top: 2rem;
     }
     
     .main-menu {
         display: flex;
-        justify-content: right;
+        justify-content: space-evenly;
         gap: 2rem;
     }
     
     .main-menu li {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
     
     .main-menu li:first-child {
@@ -262,7 +280,7 @@ footer {
     /*MEDIUM Skills Page */
     
     .skill {
-        width: 40%;
+        width: 39%;
     }
     
     .skill h2 {
@@ -280,7 +298,25 @@ footer {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 770px) {
+    .main-page-content {
+        background-position-y: 10;
+    }
+    
+    .title-container h2 {
+        font-size: 4rem;
+        text-align: left;
+    }
+    
+    .title-container h2 span:last-of-type {
+        font-size: 6rem;
+        text-transform: uppercase;
+    }
+    
+    .main-menu li {
+        font-size: 1.8rem;
+    }
+    
     .skill {
         width: 25%;
     }
