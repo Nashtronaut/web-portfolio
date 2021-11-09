@@ -297,7 +297,7 @@ footer {
     width: 2rem;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 550px) {
     /* MEDIUM Nav Bar*/
     
     .menu-icon {
