@@ -136,6 +136,7 @@ nav {
     background-repeat: no-repeat;
     padding: 1.5rem;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .skill-flex-container {
