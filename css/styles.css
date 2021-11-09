@@ -20,7 +20,7 @@ body {
 nav,
 .header-container h1 a,
 .menu-icon {
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .footer-container a svg:hover,
@@ -189,7 +189,7 @@ nav {
     font-size: 1.5rem;
     border: none;
     box-shadow:  inset 0 0 3px rgba(0,0,0, 0.9);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
     outline: none;
     margin: 3rem auto;
 }
@@ -334,7 +334,7 @@ nav {
     font-size: 1.5rem;
     border: none;
     box-shadow:  inset 0 0 3px rgba(0,0,0, 0.9);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
     outline: none;
 }
 
