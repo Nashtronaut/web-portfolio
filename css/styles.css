@@ -37,12 +37,19 @@ header {
     padding: 1rem;
 }
 
+header {
+    position: sticky;
+    top: 0;
+}
+
 .header-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
 }
 
 .header-container h1 a {
@@ -93,8 +100,14 @@ nav {
     padding: 1rem;
 }
 
-.main-page-content h2 {
+.title-container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.title-container h2 {
     font-size: 3.5rem;
+    max-font-size: 3.5rem;
     width: 70%;
     padding: 1rem;
     border-radius: 1rem;
@@ -102,17 +115,21 @@ nav {
     line-height: 1.25;
 }
 
-.main-page-content span {
+.title-container span {
     display: block;
 }
 
-.main-page-content span:last-of-type {
+.title-container span:last-of-type {
     color: #E455F1;
     margin-top: 2rem;
     letter-spacing: 0.7rem;
 }
 
 /* Footer Styles */
+footer {
+    position: sticky;
+    bottom: 0;
+}
 
 .footer-container {
     max-width: 75rem;
@@ -131,7 +148,7 @@ nav {
     width: 2rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     /* MEDIUM Nav Bar*/
     
     .menu-icon {
@@ -143,17 +160,18 @@ nav {
     }
     
     nav {
-        width: 50%;
+        width: 70%;
         max-height: initial;
     }
     
     .main-menu {
         display: flex;
-        justify-content: space-between;
+        justify-content: right;
+        gap: 2rem;
     }
     
     .main-menu li {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
     
     .main-menu li:first-child {
