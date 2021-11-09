@@ -96,7 +96,7 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 40%;
-    height: 100vh;
+    height: 93vh;
     padding: 1rem;
 }
 
@@ -123,6 +123,55 @@ nav {
     color: #E455F1;
     margin-top: 2rem;
     letter-spacing: 0.7rem;
+}
+
+/* Skills Page Styles */
+
+.skills-background {
+    background-image: url("../assests/images/skills-page-background-second.webp");
+    height: 100vh;
+    background-size: cover;
+    background-position-x: 55%;
+    background-repeat: no-repeat;
+    padding: 1.5rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column;
+    
+}
+
+.skill {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.65);
+    padding: 1.5rem;
+    color: white;
+    line-height: 2.5;
+    border-radius: 1rem;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.65);
+}
+
+.skill img {
+    width: 15%;
+}
+
+.progress-container {
+    display: block;
+    height: 1rem;
+    width: 80%;
+    background-color: grey;
+    border-radius: 1rem;
+}
+
+.progress-bar {
+    background-color: #E455F1;
+    height: 1rem;
+    width: 80%;
+    border-radius: 1rem;
 }
 
 /* Footer Styles */
