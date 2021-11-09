@@ -135,7 +135,7 @@ nav {
     background-position-x: 55%;
     background-repeat: no-repeat;
     padding: 1.5rem;
-    height: 100vh;
+    height: 101vh;
     background-attachment: fixed;
 }
 
@@ -182,10 +182,7 @@ nav {
 }
 
 /* Footer Styles */
-footer {
-    position: sticky;
-    bottom: 0;
-}
+
 
 .footer-container {
     max-width: 75rem;
