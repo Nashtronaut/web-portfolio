@@ -3,7 +3,7 @@
         const url = window.location.href
         const location = url.substr(url.lastIndexOf('/')+1)
         
-        if (location === 'skills.html'){
+        if (location === 'skills'){
             PopulateSkills()
         }
         ToggleNav()
