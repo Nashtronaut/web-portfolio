@@ -206,7 +206,7 @@ nav {
 /* Skills Page */
 
 .skills-background {
-    background-image: url("../assests/images/skills-page-background-small.webp");
+    background-image: url("../assests/images/skills-page-background-large.webp");
     background-size: cover;
     background-position-x: 50%;
     background-repeat: no-repeat;
@@ -452,10 +452,6 @@ footer {
     
     /*MEDIUM Skills Page */
     
-    .skills-background {
-        background-image: url("../assests/images/skills-page-medium.webp");
-    }
-    
     .skill {
         width: 39%;
     }
@@ -491,10 +487,6 @@ footer {
     .main-page-content {
         background-image: url("../assests/images/main-page-background-large.webp");
         background-position-y: 40%;
-    }
-    
-    .skills-background {
-        background-image: url("../assests/images/skills-page-background-large.webp");
     }
     
     .contact-background {
