@@ -1,1 +1,54 @@
-!function(){window.addEventListener("load",()=>{document.querySelector(".menu-icon").addEventListener("click",()=>{document.querySelector("nav").classList.toggle("active")}),function(){let e="",s="";skills.sort((e,s)=>s.progress-e.progress),skills.forEach(r=>{s=100===r.progress?"Mastered":r.progress>=80?"Skilled":r.progress>70?"Comfortable":r.progress>60?"Still Learning":"Willing/Want to Learn";let n=`<div class="skill">\n      <img src="assests/png/${r.img}" alt="${r.skill} logo">\n      <h2>${r.skill}</h2>\n      <p>${s}</p>\n      <div class="progress-container">\n        <div class="progress-bar" style="width: ${r.progress}%"></div>\n      </div>\n      <p>${r.progress}%</p>\n    </div> `;e+=n}),document.querySelector(".skill-flex-container").insertAdjacentHTML("afterbegin",e)}()})}();
+(function () {
+    window.addEventListener('load', ()=> {
+        const url = window.location.href
+        const location = url.substr(url.lastIndexOf('/')+1)
+        
+        if (location === 'skills.html'){
+            PopulateSkills()
+        }
+        ToggleNav()
+    })
+    
+    function ToggleNav () {
+        const toggle = document.querySelector('.menu-icon')
+        toggle.addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('active')
+        })
+    }
+    
+    function PopulateSkills () {
+        let injectionTemplate = ``
+        let prof = ''
+        
+        skills.sort((a, b) => b.progress - a.progress)
+        
+        skills.forEach((skill) =>{
+            if (skill.progress === 100){
+                prof = 'Mastered'
+            }else if (skill.progress >= 80){
+                prof = 'Skilled'
+            }else if (skill.progress > 70){
+                prof = 'Comfortable'
+            }else if (skill.progress > 60) {
+                prof = 'Still Learning'
+            }else if (skill.progress < 50) {
+                prof = 'Just starting'
+            }else{
+                prof = 'Want to Learn'
+            }
+            
+            let template = `<div class="skill">
+      <img src="assests/png/${skill.img}" alt="${skill.skill} logo">
+      <h2>${skill.skill}</h2>
+      <p>${prof}</p>
+      <div class="progress-container">
+        <div class="progress-bar" style="width: ${skill.progress}%"></div>
+      </div>
+      <p>${skill.progress}%</p>
+    </div> `
+            injectionTemplate += template
+        })
+        const insertionDiv = document.querySelector('.skill-flex-container')
+        insertionDiv.insertAdjacentHTML('afterbegin', injectionTemplate)
+    }
+})()
