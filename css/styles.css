@@ -35,6 +35,7 @@ header {
     background-size: cover;
     color: white;
     padding: 1rem;
+    z-index: 1;
 }
 
 header {
