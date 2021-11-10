@@ -349,6 +349,10 @@ nav {
 
 /* Footer Styles */
 
+footer {
+    display: none;
+}
+
 .footer-container {
     max-width: 75rem;
     margin: 0 auto;
@@ -372,7 +376,6 @@ nav {
     header,
     footer {
         background-image: url("../assests/images/header-footer-medium.webp");
-        
         position: sticky;
     }
     
@@ -484,12 +487,16 @@ nav {
         background-image: url("../assests/images/header-footer-large.webp");
     }
     
+    footer {
+        display: block;
+    }
+    
     .main-page-content {
         background-image: url("../assests/images/main-page-background-large.webp");
         background-position-y: 40%;
     }
     
-    . contact-background {
+    .contact-background {
         background-image: url("../assests/images/contact-page-large.webp");
     }
     
