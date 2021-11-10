@@ -7,7 +7,7 @@ const skills = [
     {
         img: "csharp.png",
         skill: "C#",
-        progress: 85
+        progress: 80
     },
     {
         img: "css.png",
@@ -31,18 +31,18 @@ const skills = [
     },
     {
         img: "online-learning.png",
-        skill: "Willingness to Learn",
+        skill: "Motivation to Learn",
         progress: 100
     },
     {
         img: "sql-server.png",
         skill: "SQL",
-        progress: 85
+        progress: 80
     },
     {
         img: "linux-platform.png",
         skill: "Linux",
-        progress: 80
+        progress: 85
     },
     {
         img: "netcore.png",

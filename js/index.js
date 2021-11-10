@@ -1,7 +1,12 @@
 (function () {
     window.addEventListener('load', ()=> {
+        const url = window.location.href
+        const location = url.substr(url.lastIndexOf('/')+1)
+        
+        if (location === 'skills.html'){
+            PopulateSkills()
+        }
         ToggleNav()
-        PopulateSkills()
     })
     
     function ToggleNav () {
@@ -24,12 +29,13 @@
                 prof = 'Skilled'
             }else if (skill.progress > 70){
                 prof = 'Comfortable'
-            }else if (skill.progress > 60){
+            }else if (skill.progress > 60) {
                 prof = 'Still Learning'
+            }else if (skill.progress < 50) {
+                prof = 'Just starting'
             }else{
-                prof = 'Willing/Want to Learn'
+                prof = 'Want to Learn'
             }
-            
             
             let template = `<div class="skill">
       <img src="assests/png/${skill.img}" alt="${skill.skill} logo">
@@ -40,10 +46,8 @@
       </div>
       <p>${skill.progress}%</p>
     </div> `
-            
             injectionTemplate += template
         })
-        
         const insertionDiv = document.querySelector('.skill-flex-container')
         insertionDiv.insertAdjacentHTML('afterbegin', injectionTemplate)
     }
