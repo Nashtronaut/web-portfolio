@@ -38,11 +38,6 @@ header {
     z-index: 1;
 }
 
-header {
-    position: sticky;
-    top: 0;
-}
-
 .header-container {
     display: flex;
     flex-flow: row wrap;
@@ -354,11 +349,6 @@ nav {
 
 /* Footer Styles */
 
-footer {
-    position: sticky;
-    bottom: 0;
-}
-
 .footer-container {
     max-width: 75rem;
     margin: 0 auto;
@@ -382,6 +372,16 @@ footer {
     header,
     footer {
         background-image: url("../assests/images/header-footer-medium.webp");
+        
+        position: sticky;
+    }
+    
+    header {
+        top: 0;
+    }
+    
+    footer {
+        bottom: 0;
     }
     
     .menu-icon {
