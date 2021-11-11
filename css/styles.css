@@ -188,6 +188,9 @@ nav {
 /* Skills Page */
 
 .skills-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("../assests/images/skills-page-background-large.webp");
     background-size: cover;
     background-position-x: 50%;
@@ -197,11 +200,8 @@ nav {
 }
 
 .skill-flex-container {
-    display: flex;
-    flex-flow: column;
-    gap: 1.5rem;
-    max-width: 83rem;
     margin: 0 auto;
+    max-width: 83rem;
 }
 
 .skill {
@@ -210,7 +210,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background: rgba(0,0,0,0.65);
+    background: rgba(0,0,0,0.75);
     padding: 1.5rem;
     color: white;
     line-height: 2.5;
@@ -218,6 +218,7 @@ nav {
     box-shadow: 0 0 1px 1px rgba(0,0,0,0.65);
     text-align: center;
     backdrop-filter: blur(5px);
+    margin: 1rem 0;
 }
 
 .skill img {
@@ -228,7 +229,7 @@ nav {
     display: block;
     height: 1rem;
     width: 80%;
-    background-color: grey;
+    background-color: rgba(232, 232, 232, 0.3);
     border-radius: 1rem;
 }
 
@@ -447,8 +448,15 @@ footer {
     
     /*MEDIUM Skills Page */
     
+    .skill-flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1rem;
+    }
+    
     .skill {
-        width: 39%;
+        width: 40%;
+        margin: 0;
     }
     
     .skill h2 {
@@ -460,10 +468,6 @@ footer {
         font-weight: bold;
     }
     
-    .skill-flex-container {
-        flex-flow: row wrap;
-        justify-content: center;
-    }
     
     /* MEDIUM Contact Page */
     
@@ -505,9 +509,9 @@ footer {
     .main-menu li {
         font-size: 1.8rem;
     }
-    
+
     .skill {
-        width: 25%;
+        width: 27%;
     }
 }
 

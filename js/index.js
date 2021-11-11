@@ -6,6 +6,8 @@
         if (location === 'skills'){
             PopulateSkills()
         }
+        
+        PopulateSkills()
         ToggleNav()
     })
     
