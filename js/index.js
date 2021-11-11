@@ -2,12 +2,9 @@
     window.addEventListener('load', ()=> {
         const url = window.location.href
         const location = url.substr(url.lastIndexOf('/')+1)
-        
         if (location === 'skills'){
             PopulateSkills()
         }
-        
-        PopulateSkills()
         ToggleNav()
     })
     
