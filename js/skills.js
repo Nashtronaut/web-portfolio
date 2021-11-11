@@ -48,5 +48,10 @@ const skills = [
         img: "netcore.png",
         skill: ".NET Core 6",
         progress: 75
+    },
+    {
+        img: "django.png",
+        skill: "Django Framework",
+        progress: 15
     }
 ]
