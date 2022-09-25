@@ -1,6 +1,5 @@
 # Nashtronaut
 ## Northern Alberta Institute of Technology Student
-### *4.0 GPA*
 
 <p>This is my personal web portfolio website, as a side project and a showcase.</p>
 <p>I am currently about to embark in my second year as a student with NAIT in the software development stream.</p>
