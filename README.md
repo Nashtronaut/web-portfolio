@@ -1,3 +1,5 @@
+#This project is now obsolete and has been redone. Keeping it as a memory.
+
 # Nashtronaut
 ## Northern Alberta Institute of Technology Student
 
@@ -8,4 +10,5 @@ more information about who I am, and see if I would be a good fit for your compa
 
 ### CGI Co-op Student/Employee 
 ### Please view https://nashtronaut.netlify.app for more information.
+*This link now leads to my up to date website. *
 
