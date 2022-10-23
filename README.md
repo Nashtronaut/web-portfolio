@@ -1,4 +1,4 @@
-#This project is now obsolete and has been redone. Keeping it as a memory.
+# This project is now obsolete and has been redone. Keeping it as a memory.
 
 # Nashtronaut
 ## Northern Alberta Institute of Technology Student
